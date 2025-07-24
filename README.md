@@ -25,9 +25,7 @@ CSS3 (Custom properties for theme support)
 
 Vanilla JavaScript
 
-📁 How to Use
-Clone this repository
-git clone https://github.com/your-username/spotify-clone.git
+
 
 Open the folder in a code editor (e.g. VS Code).
 
@@ -35,6 +33,8 @@ Open index.html in your browser.
 
 🚀 Live Preview
 You can deploy this project using GitHub Pages, Netlify, or Vercel for live demo.
+
+
 
 📌 Note
 This is a frontend-only demo project.

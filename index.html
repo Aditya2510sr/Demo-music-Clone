@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="theme">
+    <nav class="sidebar">
+      <h2>Demo Music App</h2>
+      <ul>
+        <li>Home</li>
+        <li>Search</li>
+        <li>Your Library</li>
+      </ul>
+      <button class="toggle-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+    </nav>
+
+    <main class="main-content">
+      <h1>Featured Songs</h1>
+
+      <input type="text" id="search" placeholder="Search for a song..." onkeyup="filterSongs()"/>
+
+      <div class="playlist" id="playlist">
+        <!-- Songs will be inserted here dynamically -->
+      </div>
+
+      <div class="player-area">
+        <iframe id="player" width="100%" height="300" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="controls">
+          <button class="play-btn" onclick="togglePlay()">▶️</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

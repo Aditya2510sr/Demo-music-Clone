@@ -1,0 +1,128 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --card-bg: #282828;
+  --hover-color: #1db954;
+}
+
+.light-mode {
+  --bg-color: #f2f2f2;
+  --text-color: #111;
+  --card-bg: #e0e0e0;
+  --hover-color: #1db954;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: black;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: var(--hover-color);
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.toggle-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background: var(--hover-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.main-content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.playlist {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.song-card {
+  background-color: var(--card-bg);
+  width: 180px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.song-card:hover {
+  background-color: var(--hover-color);
+  color: black;
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.player-area {
+  margin-top: 30px;
+}
+
+.controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.play-btn {
+  font-size: 28px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: var(--hover-color);
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.playing {
+  transform: scale(1.2) rotate(15deg);
+}
